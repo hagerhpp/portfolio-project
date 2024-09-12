@@ -1,0 +1,220 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* navbar */
+.header{
+position: fixed;
+top: 0;
+bottom: 0;
+padding: 20px 10%;
+width: 100%;
+display: flex;
+justify-content: space-between;
+text-align: center;
+z-index: 100;
+background: transparent;
+}
+.navbar a{
+display: inline-block;
+text-decoration: none;
+color: white;
+font-size: 25px;
+margin-left: 35px;
+transition: .3s;
+animation: slideTop .3s ease forwards;
+}
+.navbar a:hover{
+color: brown;
+}
+.logo{
+color: rgb(226, 8, 8);
+text-decoration: none;
+font-size: 35px;
+font-weight: 600;
+cursor: default;
+opacity: 0;
+animation:slideRight 1s  ease forwards;
+
+}
+@keyframes slideRight{
+0%{
+transform:translateX(-100px) ;
+opacity: 0;
+}
+100%{
+    transform:translateX(0px) ;
+    opacity: 1;  
+}
+}
+@keyframes slideTop{
+    0%{
+    transform:translateY(-100px) ;
+    opacity: 0;
+    }
+    100%{
+        transform:translateY(0px) ;
+        opacity: 1;  
+    }
+    } 
+
+
+/* section */
+.land{
+background:url(/assest/image/abstract-black-lines-geometric-background_677411-2748.avif);
+}
+.home{
+
+position: relative;
+justify-content: space-between;
+height: 100vh;
+display: flex;
+width: 100%;
+padding:70px 10% 0  ;
+align-items: center;
+}
+.home-con{
+max-width: 500px;
+}
+.home-con h1{
+color: brown;
+font-size: 35px;
+}
+.home-con h3{
+color: rgb(255, 51, 0);
+font-size: 45px;
+}
+
+.home-con p {
+font-size:25px ;
+color: aliceblue;
+
+}
+.home-con span{
+font-size: 30px;
+color: rgb(255, 0, 0);
+}
+
+/* img */
+.image-container {
+    position: relative;
+    width: 400px; /* عرض العنصر الحاوي */
+    height: 400px; /* ارتفاع العنصر الحاوي */
+    border-radius: 50%; /* يجعل الشكل دائري */
+    overflow: hidden; /* إخفاء الأجزاء الخارجة */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 5px rgba(255, 0, 0, 1); /* البوردر الأولي */
+    animation: borderAnimation 2s infinite linear; /* تطبيق الأنيميشن */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* يجعل الصورة دائرية */
+    display: block;
+}
+
+@keyframes borderAnimation {
+    0% {
+        box-shadow: 0 0 0 5px rgba(255, 0, 0, 1);
+    }
+    25% {
+        box-shadow: 0 0 0 5px rgba(0, 255, 0, 1);
+    }
+    50% {
+        box-shadow: 0 0 0 5px rgba(0, 0, 255, 1);
+    }
+    75% {
+        box-shadow: 0 0 0 5px rgba(255, 0, 255, 1);
+    }
+    100% {
+        box-shadow: 0 0 0 5px rgba(255, 0, 0, 1);
+    }
+}
+
+ /* .social-icon */
+.social-media-icons {
+    margin-top: 19px;
+    display:inline-flex ;
+    gap:30px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    background-color: #333;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.github {
+    background-color: #333;
+}
+
+.x {
+    background-color: black; /* Twitter's blue color; adjust if needed */
+}
+
+/* Adjust font size if needed */
+.social-icon i {
+    font-size: 20px;
+}
+/* button */
+
+/* Button with Animation */
+
+  
+.btn {
+    /* Inline block for proper padding and alignment */
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #8a0d04; /* Button background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 12px 24px; /* Padding for button size */
+    font-size: 16px; /* Font size */
+    border-radius: 25px; /* Rounded corners */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .btn:hover {
+    box-shadow: 
+      0 0 5px rgba(211, 5, 5, 0.5), 
+      0 0 50px rgba(211, 5, 5, 0.3), 
+      0 0 100px rgba(211, 5, 5, 0.2); /* Glow effect on hover */
+  }
+  
+  
+
+  
+
+
+
+
+
+
+
